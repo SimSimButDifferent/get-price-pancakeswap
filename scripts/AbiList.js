@@ -11,5 +11,7 @@ const pairABI = [
 ]
 
 const routerABI = [
-    "function getAmountsOut(uint amountIn, address[] memory path) public view virtual override returns (uint[] memory amounts)",
+    "function getAmountsOut(uint amountIn, address[] memory path) public view returns (uint[] memory amounts)",
 ]
+
+module.exports = { erc20ABI, factoryABI, pairABI, routerABI }
